@@ -1,0 +1,44 @@
+
+
+.nav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--darkblue);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: .7s;
+}
+
+.nav a{
+    text-align: center;
+    display: block;
+    padding: 35px 10px;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    color: var(--white);
+    white-space: nowrap;
+}
+
+.nav a:hover{
+    color: var(--blue);
+    transition: 0.4s;
+}
+
+.nav .logo{
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+    transition: .9s;
+}
+
+

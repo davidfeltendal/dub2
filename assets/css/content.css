@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap');
+
+:root {
+    --blue: #0268b1;
+    --darkblue: #1c345b;
+    --lightblue: #63a9de;
+    --white: #eee;
+
+    --newsSlideWidth: 80vw;
+    --newsCardNumber: 2;
+    --newsCardDisplayed: 1;
+    --newsCardWidth: calc(var(--newsCardWidth)/var(--newsCardDisplayed));
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    background-color: var(--white);
+}
+
+#content{    
+    transition: margin-left 0.7s;
+    overflow: hidden;
+}
+
+.seperator{
+    box-shadow: 0 10px 20px var(--darkblue);
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--darkblue);
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--darkblue);
+}

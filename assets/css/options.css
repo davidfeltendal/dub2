@@ -1,0 +1,47 @@
+
+
+.options{
+    background-color: var(--white);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 25px;
+    width: 100%;
+    z-index: 1;
+}
+
+.options h2{
+    text-align: center;
+    margin-top: 150%; 
+    margin-left: -55px;
+    white-space: nowrap;
+}
+
+.option1,.option2,.option3,.option4{
+    height: 225px;
+    width: 225px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    padding: 15px 0 0 55px ;    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    display: inline-block;  
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+
+.option1{
+    background-image: url('/assets/img/_94.jpg');
+}
+.option2{
+    background-image: url('/assets/img/_31.jpg');
+}
+.option3{
+    background-image: url('/assets/img/_82.jpg');
+}
+.option4{
+    background-image: url('/assets/img/Fritid\ \(3\).jpg');
+}

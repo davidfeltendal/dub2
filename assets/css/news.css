@@ -1,0 +1,163 @@
+.news{
+    /*root*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*body*/
+    background-color: var(--white);    
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsSlide{
+    width: 70vw;
+    height: 60%;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.newsSlide:before{
+    left: 0;
+    background: linear-gradient(to right, #1c345b 0%, transperent 100%);
+}
+
+.newsSlide:after{
+    right: 0;
+    background: linear-gradient(to left, #1c345b 0%, transperent 100%);
+}
+
+.newsContent:hover{
+    animation-play-state: paused;
+}
+
+.newsContent{
+    list-style: none;    
+    height: 100%;
+    display: flex;
+    animation: scrolling 15s linear infinite;
+}
+
+@keyframes scrolling{
+    0% { transform: translateX(0);}
+    100% { transform: translateX(-160vw);}
+}
+
+.newsContent li{
+    padding-left: 75px;
+    padding-right: 75px;
+    height: 90%;
+    width: 80vw;
+    flex-shrink: 0;
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+.newsCard1,.newsCard2{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+    margin-top: 40px;
+    white-space: nowrap;
+}
+
+.newsCardText{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.newsCard1{
+    background-image: url(/assets/img/ProfilJonas.jpg);
+}
+
+.newsCard2{
+    background-image: url(/assets/img/ProfilThomas.jpg);
+}
+
+.cardContent{    
+    white-space: normal;
+    display: flex;
+}
+
+.cardContent h1{
+    text-align: center;
+}
+
+@media only screen and (min-width:980px){
+    .cardContent{    
+        -webkit-box-shadow: 8px 10px 6px -8px var(--blue);
+        -moz-box-shadow: 8px 10px 6px -8px var(--blue);
+        box-shadow: 8px 10px 6px -8px var(--lightblue);
+        white-space: normal;
+        display: flex;
+    }
+}
+
+@media  only screen and (max-width: 600px){
+    .newsContent li{
+        padding-left: 75px;
+        padding-right: 75px;
+        height: 90%;
+        width: 200vw;
+        flex-shrink: 0;
+        font-size: 25px;
+        white-space: nowrap;
+    }
+    
+    .newsCard1,.newsCard2{
+        height: 300px;
+        width: 90vw;
+        border-radius: 50%;
+        background-color: var(--blue);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-left: 50px;
+        margin-top: 40px;
+        white-space: nowrap;
+    }
+    
+    .newsCardText{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+    .newsCard1{
+        background-image: url(/assets/img/ProfilJonas.jpg);
+    }
+    
+    .newsCard2{
+        background-image: url(/assets/img/ProfilThomas.jpg);
+    }
+    
+    .cardContent{    
+        white-space: normal;
+        display: flex;
+    }
+    
+    .cardContent h1{
+        text-align: center;
+    }
+
+    .cardContent .btn h1{
+        margin-right: 25vw;
+    }
+
+    .cardContent .btn h1:hover{
+        color: var(--blue);
+    }
+
+
+
+    @keyframes scrolling{
+        0% { transform: translateX(0);}
+        100% { transform: translateX(-270vw);}
+    }
+    
+}

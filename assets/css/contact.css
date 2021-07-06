@@ -1,0 +1,27 @@
+.contact{
+    height: 100px;
+}
+
+.btn-contact h1:hover{
+    color: var(--blue);
+}
+
+.btn-contact{
+    align-content: center;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    border: none;
+    width: 50vw;
+}
+
+.btn-contact:hover,
+.btn-contact:active,
+.btn-contact:focus,
+.btn-contact:checked,
+.btn-contact:disabled{
+    align-content: center;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    border: none;
+    width: 50vw;
+}

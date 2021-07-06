@@ -1,0 +1,36 @@
+
+
+.header{
+    padding: 30px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.nav .close{
+    position: absolute;
+    top: 0;
+    right: 22px;
+    margin-left: 50px;
+    font-size: 35px;
+}
+
+.nav .close i{
+    color: var(--white);
+}
+
+.slide a{
+    padding: 22px;
+    font-size: 32px;
+    color: var(--darkblue);
+}
+
+.slide a:hover{
+    color: var(--blue);
+}
+
+.header img{
+    height: 100px;    
+    display: block;
+    margin: 0 auto;
+    margin-top: -45px;
+}

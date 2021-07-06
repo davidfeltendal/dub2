@@ -1,0 +1,7 @@
+.carousel-item{
+    white-space: nowrap;
+}
+
+.carousel-item img{
+    padding: -5px;
+}
